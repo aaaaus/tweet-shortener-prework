@@ -27,7 +27,7 @@ def word_substituter(tweet_string)
   new_tweet.join(" ")
 end
 
-def bulk_tweet_shortener(tweets)
+def bulk_tweet_shortener(tweet_string)
     new_tweet = []
   tweet_string.split(" ").collect do |word|
     if dictionary.keys.include?(word)

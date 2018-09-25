@@ -16,11 +16,11 @@ def dictionary
 end
 
 def word_substituter(tweet_string)
-  tweet_array = tweet_string.split(" ")
-  tweet_array.collect do |word|
+  tweet_string.split(" ").collect do |word|
     if dictionary.keys.include?(word)
       dictionary[word] = word
     end
-  end.join(" ")
+  end
+  tweet_string.join(" ")
 end
   

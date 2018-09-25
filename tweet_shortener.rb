@@ -70,7 +70,7 @@ def shortened_tweet_truncator(tweet)
   new_tweet.join(" ")
   if new_tweet.length > 140
     trunc_tweet = new_tweet[0..136] + "..."
-    return trunc_tweet
+    trunc_tweet
   else
     new_tweet
   end
@@ -78,8 +78,6 @@ else
   tweet
 end
 end
-  
-  tennblocks
   
   
   

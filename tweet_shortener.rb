@@ -21,7 +21,6 @@ def word_substituter(tweet_string)
     if dictionary.keys.include?(word)
       dictionary[word] << word
     end
-    tweet_array.join(" ")
-  end
+  end.join(" ")
 end
   

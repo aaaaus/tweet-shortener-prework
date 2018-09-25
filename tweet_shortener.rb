@@ -44,7 +44,7 @@ end
 def selective_tweet_shortener(tweet)
   if tweet.length > 140
       new_tweet = []
-  tweet_string.split(" ").collect do |word|
+  tweet.split(" ").collect do |word|
     if dictionary.keys.include?(word)
       new_tweet.push(dictionary[word])
     else

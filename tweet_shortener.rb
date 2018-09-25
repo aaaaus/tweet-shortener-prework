@@ -54,6 +54,7 @@ def selective_tweet_shortener(tweet)
   new_tweet.join(" ")
 else
   tweet
+end
 end  
   
   

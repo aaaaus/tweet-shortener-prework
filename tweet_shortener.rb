@@ -31,7 +31,7 @@ def bulk_tweet_shortener(tweets)
   tweets.each do |tweet|
   new_tweet = []
   tweet.split(" ").collect do |word|
-    if dictionary.keys.include?(word)
+    if dictionary.keys.include?(word.downcase)
       new_tweet.push(dictionary[word])
     else
       new_tweet.push(word)

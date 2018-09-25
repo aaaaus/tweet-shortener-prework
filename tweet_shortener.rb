@@ -32,7 +32,7 @@ def bulk_tweet_shortener(tweets)
   new_tweet = []
   tweet.split(" ").collect do |word|
     if dictionary.keys.include?(word.downcase)
-      new_tweet.push(dictionary[word])
+      new_tweet.push(dictionary[word.downcase])
     else
       new_tweet.push(word)
     end

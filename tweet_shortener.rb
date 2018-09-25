@@ -60,7 +60,7 @@ end
 def shortened_tweet_truncator(tweet)
   if tweet.length > 140
       new_tweet = []
-      tweet2 = tweet[0..136] + "..."
+      tweet2 = tweet[0..140] + "..."
       tweet2.split(" ").collect do |word|
       if dictionary.keys.include?(word)
         new_tweet.push(dictionary[word])

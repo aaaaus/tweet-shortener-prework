@@ -40,3 +40,5 @@ def bulk_tweet_shortener(tweets)
   puts new_tweet.join(" ")
 end
 end
+
+def selective_tweet_shortener
